@@ -2,13 +2,13 @@ import ROOT
 
 # global parameters
 intLumi        = 1. # assume histograms are scaled in previous step
-intLumiLabel   = "L = 44.84 pb^{-1}"
+intLumiLabel   = "L = 100 ab^{-1}"
 ana_tex        = 'e^{+}e^{-} #rightarrow Z #rightarrow #mu^{#plus}#mu^{#minus}'
 energy         = 91.2
 collider       = 'FCC-ee'
 formats        = ['png','pdf']
 
-outdir         = '/home/submit/jaeyserm/public_html/fccee/tutorials/z_mumu_xsec/'
+outdir         = '/home/submit/dipeshb/fcc-ee/tutorials/03_CrossSection/z_mumu_xsec/'
 inputDir       = './output/' 
 
 plotStatUnc    = False
@@ -99,5 +99,31 @@ hists["invariant_mass"] = {
     "ymin":     1e-3,
     #"ymax":     1e6,
     "xtitle":   "Invariant mass (GeV)",
+    "ytitle":   "Events",
+}
+
+hists["muon1_p"] = {
+    "output":   "muon1_p",
+    "logy":     True,
+    "stack":    True,
+    "rebin":    1,
+    "xmin":     0,
+    "xmax":     150,
+    "ymin":     1e-3,
+    #"ymax":     1e6,
+    "xtitle":   "muon1_momentum",
+    "ytitle":   "Events",
+}
+
+hists["muon2_p"] = {
+    "output":   "muon2_p",
+    "logy":     True,
+    "stack":    True,
+    "rebin":    1,
+    "xmin":     0,
+    "xmax":     150,
+    "ymin":     1e-3,
+    #"ymax":     1e6,
+    "xtitle":   "muon2_momentum",
     "ytitle":   "Events",
 }

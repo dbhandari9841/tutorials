@@ -23,7 +23,7 @@ for event in events:
 ```
 
 ```python
-# RDF
+# RDF in root dataframe pretty easy
 df = df.Filter("particles.pt > 10")
 df.Histo1D("particles.pt")
 ```

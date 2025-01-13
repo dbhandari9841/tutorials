@@ -80,7 +80,7 @@ def plot_cutflow():
     ax.set_xlabel("")
     ax.margins(y=0.25)
 
-    hep.label.exp_label(exp="FCC-ee", ax=ax, data=False, rlabel="44.84 $\mathrm{pb^{-1}}$ (91.2 GeV)")
+    hep.label.exp_label(exp="FCC-ee", ax=ax, data=False, rlabel="100 $\mathrm{ab^{-1}}$ (91.2 GeV)")
 
     fig.savefig(f"{outDir}/cutFlow_mpl4hep.png", bbox_inches="tight")
     fig.savefig(f"{outDir}/cutFlow_mpl4hep.pdf", bbox_inches="tight")
@@ -88,7 +88,7 @@ def plot_cutflow():
 
 if __name__ == "__main__":
 
-    outDir = "/home/submit/jaeyserm/public_html/fccee/tutorials/z_mumu_xsec/"
+    outDir = "/home/submit/dipeshb/fcc-ee/tutorials/03_CrossSection/z_mumu_xsec/"
     procs = ["p8_ee_gaga_mumu_ecm91p2", "wzp6_ee_tautau_ecm91p2", "wzp6_ee_mumu_ecm91p2"]
     labels = ["$e^+e^-\\to e^+e^-qq$", "$e^+e^-\\to\\tau^+\\tau^-$", "$e^+e^-\\to\mu^+\mu^-$"]
 

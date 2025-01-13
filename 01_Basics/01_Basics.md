@@ -28,7 +28,7 @@ Each collision is dubbed an "event", and our data is organized in sets of "event
   |------- Charge: 1
   |------- ...
   ...
-```
+``` 
 
 Data are stored in `.root` files, and are organized in a "tree" structure. This structure is a bit different than what is shown above.
 
